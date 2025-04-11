@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet</title>
+    <link rel="icon" href="Assets/logo-removebg-preview.webp">
+    <link rel="stylesheet" href="CSS/template.css">
+    <link rel="stylesheet" href="CSS/wallet.css">
+    <script src="https://kit.fontawesome.com/c7de107e5c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="JS/load-components.js" defer></script>
+    <script type="module" src="JS/wallet.js" defer></script>
+    
+
+</head>
+
+<body data-page="investing">
+
+    <header id="header" role="banner"></header>
+    <aside id="aside" class="sidebar" role="complementary" aria-labelledby="aside-title"></aside>
+
+    <main>
+
+        <section class="wallet-info">
+
+            <div class="balance-block">
+                <h1 class="balanceH1">Your Wallet</h1>
+
+                <div class="test-container">
+
+
+                    <ul class="wallet-list">
+                        
+                        <li class="balance-blockList" id="total-balance">  
+                            
+                            <span>
+
+                                <i class="fa-solid fa-coins"></i>
+                                Your balance
+                        
+                            </span>
+
+                        </li>
+
+
+                        <li class="balance-blockList" id="total-firstCoin">    
+
+                            <span>
+                                <i class="fa-solid fa-circle yellow-color"></i>
+                                BTC
+                            </span>
+
+                        </li>
+
+                        
+                        <li class="balance-blockList" id="total-secondCoin">  
+
+                            <span><i class="fa-solid fa-circle blue-color"></i>
+                                ETH
+                            </span>
+
+                        </li>
+
+                        <li class="balance-blockList" id="total-thirdCoin">   
+
+                            <span><i class="fa-solid fa-circle green-color"></i>
+                                TETHER
+                            </span>
+
+                        </li>
+
+                        <li class="balance-blockList" id="total-othersCoin">
+
+                            <span><i class="fa-solid fa-circle red-color"></i>
+                                Others
+                            </span>
+
+                        </li>
+                        
+                    </ul>
+
+                    <div class="temp-container">
+                        <canvas class="wallet-doughnut" id="wallet-chart"></canvas>
+                    </div>
+
+                </div>
+
+               
+
+            </div>
+        
+        </section>
+
+        <section class="wallet-cryptoList">
+
+            <h1 class="balance-displayer">List of Cryptos</h1>
+
+            <div class="crypto-redirect">
+                <a href="crypto.html">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    Buy / Sell
+                </a>
+            </div>
+          
+            <ul class="crypto-listContainer">
+
+             
+
+            </ul>
+
+        </section>
+    
+    </main>
+
+    <div id="language-container"></div>
+    <div id="country-container"></div>
+
+    <footer id="footer"></footer>
+    
+</body>
+</html>

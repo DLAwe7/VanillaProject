@@ -1,0 +1,181 @@
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactForm{
+    width: 80%;
+    display: flex;
+    flex-grow: 1;
+    background-color: var(--general-bg-color);
+    gap: 10px;
+}
+
+#contactTitle{
+    display: flex;
+    justify-content: center;
+    background-color: var(--titles-color);
+    width: 80%;
+    padding: 10px;
+}
+
+
+
+
+/* #region   ------------------------------------------             FORM BLOCK         ---------------------------------------------------             */
+
+.form-block{
+    display: flex;
+    width: 50%;
+}
+
+.contForm{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+}
+
+#dataContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#attachments{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#subjectContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
+    
+}
+
+#message, #subject, #tel, #name, #email {
+    color: var(--inverted-text-color);
+}
+
+#message{
+    padding: 5px;
+}
+
+
+#tos{
+    cursor: pointer;
+    
+}
+
+#tosLabel{
+    font-size: 15px;
+}
+
+
+
+#submitButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#subButton{
+    margin-top: 20px;
+    width: 50%;
+    background-color: var(--button-color);   
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#subButton:hover{
+    background-color: var(--button-color-hover);
+}
+
+.contList{
+    margin-bottom: 20px;
+}
+
+.contList:first-child{
+    margin-top: 20px;
+}
+
+
+
+
+/* #endregion */
+
+/* #region   ------------------------------------------             TEXT BLOCK         ---------------------------------------------------             */
+
+.text-block{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    width: 50%;
+}
+
+
+.text-block p, .text-block li{
+    font-size: 17px;
+}
+
+.text-block h2 , #goodbye{
+    text-align: center;
+}
+
+.text-block a{
+    cursor: pointer;
+    color: hsl(215, 65%, 82%); 
+}
+
+.text-block a:hover{
+    color: hsl(215, 65%, 92%); ;
+
+}
+
+
+
+
+/* #endregion */
+
+
+
+@media (max-width: 900px){
+
+    .contactForm{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-block{
+        width: 100%;
+    }
+
+    .text-block{
+        display: none;
+    }
+
+
+    #contactTitle{
+        width: 100%;
+    }
+
+    .no-textarea{
+        width: 70%;
+    }
+ 
+}
+
+@media (max-width: 500px){
+
+    .no-textarea{
+        width: 100%;
+    }
+ 
+}

@@ -1,0 +1,62 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--general-bg-color);
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.transactions-history{
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: var(--row-color);
+}
+
+caption{
+    background-color: var(--titles-color);
+    padding: 10px;
+    width: 100%;  
+}
+
+#rowTitle{
+    background-color: var(--row-header);
+    width: 100%;  
+}
+
+td{
+    padding: 20px;
+}
+
+th{
+    padding: 10px;
+    word-break: break-word;
+}
+
+tr{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.row{
+    font-size: 1rem;
+}
+
+tr:nth-of-type(2n){
+    background-color: var(--general-bg-color);
+}
+
+@media (max-width: 900px){
+    section{
+        width: 100%;
+    }
+    
+}

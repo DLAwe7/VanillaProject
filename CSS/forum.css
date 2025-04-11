@@ -1,0 +1,339 @@
+main{
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.forum-container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 0px;
+    width: 75%;
+}
+
+
+/* #region  -------------------------------------------           SEARCHBAR               ------------------------------------------------ */
+
+#newPost{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 5px;
+    padding: 5px;
+    
+}
+
+#newPost:hover{
+    background-color: hsla(240, 2%, 35%);
+    border-radius: 20px;
+}
+
+#searchingBar{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+}
+
+.search-container{
+    position: relative;
+    flex-grow: 1;
+}
+
+#searchBar{
+    display: flex;
+    width: clamp(50px, 80%, 800px);
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding-left: 50px;
+    outline: none;
+    color: black;
+}
+
+
+#myLabel{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: gray;
+    pointer-events: none;
+}
+
+.fa-solid.fa-magnifying-glass {
+    color: black;
+    font-size: 18px;
+}
+
+.news-toggle{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 5px;
+    padding: 5px;
+}
+
+.news-toggle:hover{
+    background-color: hsla(240, 2%, 35%);
+    border-radius: 20px;
+}
+
+.buttons-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+/* #endregion */
+
+/* #region   ------------------------------------------           POSTS                   -----------------------------------------------------        -----  */
+
+.post-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid black;
+    background-color: var(--general-bg-color);
+    cursor: pointer;
+    padding: 10px;
+}
+
+.first-card{
+    border-top: 1px solid black;
+}
+
+.userDisplay{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.forumImage{
+    width: 25px;
+    border-radius: 50%;
+}
+
+.userName{
+    font-size: 1rem;
+}
+
+.commentContent{
+    font-size: 1rem;
+}
+
+.icon-container{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.fa-solid.fa-share:hover{
+    color:rgb(251, 255, 0);
+    cursor: pointer;
+}
+
+.fa-solid.fa-thumbtack:hover{
+    color:rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+.fa-solid.fa-comment:hover{
+    color:rgb(25, 206, 215);
+    cursor: pointer;
+}
+
+.fa-solid.fa-thumbs-down:hover{
+    color:rgba(232, 20, 45, 0.615);
+    cursor: pointer;
+}
+
+.fa-solid.fa-thumbs-up:hover{
+    color:rgb(0, 255, 60);
+    cursor: pointer;
+}
+
+/* #endregion */
+
+/* #region --------------------------------------------           POST SHOW MORE          ---------------------------------------------        -----*/
+
+.show-more{
+    margin-top: 10px;
+    display: flex;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+    gap: 5px;
+}
+
+.show-more:hover{
+    background-color: hsla(240, 2%, 35%);
+    border-radius: 20px;
+}
+/* #endregion */
+
+/* #region   ------------------------------------------           SECOND ASIDE            ---------------------------------------------------             */
+
+.second-aside{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    background-color: var(--row-color);   
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+    border-top: none;
+    border-right: none;
+    width: 25%;
+    min-width: 300px;
+}
+
+
+
+.second-aside h1{
+    text-align: center;
+    padding: 10px;
+    background-color: var(--titles-color);
+}
+
+.articleCard{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.articleCard:hover{
+    background-color: var(--dashboard-hover);
+}
+
+.articleImage{
+    width: 100%;
+}
+
+.articleCard span{
+    display: block;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.articleCard h2{
+    font-size: 15px;
+    padding: 3px;
+    text-align: center;
+    background-color: var(--titles-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.news-closingBtn{
+    display: none;
+    justify-content: flex-start;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 5px;
+    padding: 5px;
+}
+
+
+
+/* #endregion */
+
+/* #region   ------------------------------------------           MEDIA QUERIES           ---------------------------------------------------             */
+
+@media (max-width: 900px){
+
+    .forum-container{
+        width: 100%;
+    }
+
+    .news-Btn2{
+        display: flex;   
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    .card{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #newPost{
+        margin-left: 0px;
+    }
+
+    .second-aside{
+        position: fixed;
+        top: 60px;
+        right: 0px;
+        transform: translateX(100%);
+        width: 300px;
+        height: calc(100vh - 60px);
+        overflow-y: auto;
+        z-index: 10;
+        border-left: none;
+    }
+
+    .second-aside h1{
+        display: none;
+    }
+
+    .news-closingBtn{
+        display: flex;
+    }
+
+    #searchBar{
+        width: 100%;
+       
+    
+    }
+    
+}
+
+@media (max-width: 550px){
+
+    .news-Btn2{
+        display: none;
+    }
+
+    .news-Btn1{
+        display: flex;
+    }
+
+    #searchingBar{
+        flex-direction: column-reverse;
+    }
+
+
+    #newPost{
+        width: 100%;
+        justify-content: flex-start;  
+        
+    }
+
+    .forum-container{ 
+        padding: 0px;
+    }
+
+    .buttons-container{
+        width: 100%;
+    
+    }
+    
+}
+
+
+/* #endregion */

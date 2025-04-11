@@ -1,0 +1,62 @@
+[
+    {
+        "userName": "User_1",
+        "userImage": "defaultUserImage",
+        "postTitle": "The Balancing Act of Interest Rates",
+        "postContent": "Interest rates are a tricky subject right now. With the Fed trying to control inflation, it's a balancing act. If they raise rates too quickly, it could lead to a recession, but if they wait too long, inflation could spiral out of control. It's a tough call."
+    },
+    {
+        "userName": "User_2",
+        "userImage": "defaultUserImage",
+        "postTitle": "Universal Basic Income: A Necessary Change?",
+        "postContent":"I've been reading a lot about universal basic income lately. With automation and AI becoming more prominent, it might be something we need to seriously consider. Thoughts?"
+    },
+    {
+        "userName": "User_3",
+        "userImage": "defaultUserImage",
+        "postTitle": "Supply Chain Struggles Post-Pandemic",
+        "postContent": "Global supply chains are still struggling to recover post-pandemic. I'm curious to see how this plays out in the coming months—higher prices and shortages seem inevitable."
+    },
+    {
+        "userName": "User_4",
+        "userImage": "defaultUserImage",
+        "postTitle": "Cryptocurrency: Boom or Bust?",
+        "postContent": "Looking into crypto again, even with the market volatility. There's something intriguing about decentralized finance, but I'm still cautious with the amount of hype around it. Anyone here with real experience investing in crypto?"
+    },
+    {
+        "userName": "User_5",
+        "userImage": "defaultUserImage",
+        "postTitle": "The Housing Market Crisis",
+        "postContent": "The housing market is nuts right now. It feels impossible to find anything affordable, especially in larger cities. Something needs to change at the policy level to ensure homeownership is within reach for more people."
+    },
+    {
+        "userName": "User_6",
+        "userImage": "defaultUserImage",
+        "postTitle": "The Rise of Sustainable Investments",
+        "postContent": "One thing I find fascinating is the increasing interest in sustainable investments. People are starting to care more about the ethical implications of their investments. I wonder if this trend will continue as the climate crisis worsens."
+    },
+    {
+        "userName": "User_7",
+        "userImage": "defaultUserImage",
+        "postTitle": "The Impact of Job Growth on the Economy",
+        "postContent": "Has anyone else been tracking the latest job growth figures? I'm cautiously optimistic, but with wages still lagging behind inflation, I'm not sure how sustainable this is."
+    },
+    {
+        "userName": "User_8",
+        "userImage": "defaultUserImage",
+        "postTitle": "The Need for Minimum Wage Reform",
+        "postContent": "I think we need a major shift in how we approach minimum wage. The cost of living is skyrocketing, yet many workers are still making the same hourly wage from a decade ago. It's time for policy change!"
+    },
+    {
+        "userName": "User_9",
+        "userImage": "defaultUserImage",
+        "postTitle": "AI and Job Displacement",
+        "postContent": "AI is advancing at an incredible rate. While it's exciting, I'm worried about the potential job losses.How do we ensure workers aren't left behind as automation becomes more widespread?"
+    },
+    {
+        "userName": "User_10",
+        "userImage": "defaultUserImage",
+        "postTitle": "The Future of Remote Work",
+        "postContent": "Remote work became the norm during the pandemic, but now many companies are pushing for a return to office. Is hybrid work the best compromise, or should we fight to keep remote work an option for everyone?"
+    }
+]

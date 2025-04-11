@@ -1,0 +1,226 @@
+/* #region   ------------------------------------------             CRYPTO CONTAINER         ---------------------------------------------------             */
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.crypto-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--general-bg-color);
+}
+
+.crypto-searchBar{
+    width: 100%;
+    background-color: var(--titles-color)
+}
+
+.crypto-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+}
+
+.search-wrapper{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 70%;
+}
+
+.search-icon{
+    margin-left: 5px;
+    position: absolute;
+    z-index: 3;
+    color: black;
+    font-size: 15px;
+}
+
+#crypto-searcher{
+    padding-left: 25px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    color: black;
+}
+
+.cryptos-list{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    max-height: 1000px;
+    width: 100%; 
+    overflow-y: auto;
+    background: var(--row-color);
+    border: 1px solid #ccc;
+    z-index: 30;
+    display: none;
+    flex-direction: column;
+}
+
+.cryptos-list img{
+    width: 50px;
+}
+
+.crypto-card{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.crypto-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.crypto-card:last-child {
+    border-bottom: none;
+}
+
+.crypto-card:hover {
+    background-color: var(--dashboard-hover);
+}
+
+.chosen-crypto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background-color: var(--titles-color);
+    padding: 10px;
+}
+
+.chosen-crypto img{
+    width: 30px;
+}
+
+/* #endregion */
+
+/* #region   ------------------------------------------             CRYPTO GRAPH         ---------------------------------------------------             */
+
+.crypto-graphData{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.crypto-graphContainer{
+    padding: 20px;
+    min-height: 500px;
+}
+
+.crypto-graph{
+    background-color: rgb(255, 255, 255);
+}
+
+.purchase-buttonContainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.purchase-button{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 7px;
+}
+
+.purchase-button:hover{
+    background-color: var(--row-color);
+    transition: 0.15s ease;
+}
+
+/* #endregion */
+
+/* #region   ------------------------------------------             CRYPTO LIST         ---------------------------------------------------             */
+
+.infoCards-container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+
+.info-cards{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.info-card{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: var(--row-color);
+    word-break: break-word;
+    flex-grow: 1;
+}
+
+.info-card p{
+    text-align: end;
+}
+
+.info-card:first-child{
+    border-top: 1px solid rgba(255, 255, 255, 0.3);;
+}
+
+.info-card:nth-of-type(2n){
+    background-color: var(--general-bg-color);
+}
+
+/* #endregion */
+
+@media (min-width: 900px){
+    
+    main{
+        flex-direction: column;
+        width: 80%;
+        
+    }
+
+    .crypto-graphContainer{
+        padding: 20px;
+        height: 50%;
+    }
+
+ 
+}
+
+@media (max-width: 500px){
+
+    .info-card h3,
+    .info-card p{
+        font-size: 15px; 
+    }
+
+    .crypto-graphContainer{
+        display: none;
+    }
+
+}
+
+
+
+
+

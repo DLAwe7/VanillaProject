@@ -1,0 +1,162 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 80%;
+    background-color: var(--general-bg-color);
+}
+
+.menuTitle{
+    text-align: center;
+    background-color: var(--titles-color);
+    width: 100%;
+    padding: 10px;
+}
+
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    
+
+}
+
+.card:last-child{
+    border-bottom: none;
+}
+
+.modifyBtn{
+    border-radius: 20px;
+    background: none;
+    background-color: var(--button-color);
+    border: 1px solid black;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.modifyBtn:hover{
+    background-color: var(--button-color-hover);
+    transition: .15s;
+}
+
+section span{
+    font-size: 1rem;
+}
+
+
+#change-picture{
+    padding: 10px;
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+#change-picture{
+    cursor: pointer;
+}
+
+#upload-img{
+    display: none;
+}
+
+.image-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--card-color);
+    padding: 20px;
+    border-bottom: 1px solid black;
+
+}
+
+.image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container span{
+    padding: 10px;
+    font-weight: bold;
+}
+
+.edit-cardData{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+    width: clamp(300px, 50%, 400px);
+    background-color: var(--body-bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+.button-type{
+    align-self: flex-end;
+    border: none;
+    background: none;
+}
+
+.submit-type{
+    margin-top: 10px;
+    border: none;
+    background-color: var(--button-color);
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.submit-type:hover{
+
+    background-color: var(--button-color-hover);
+
+}
+
+.edit-cardData i{
+    cursor: pointer;
+}
+
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+}
+
+#inputModify{
+    color: black;
+    width: clamp(270px, 50%, 500px);
+}
+
+
+
+@media (max-width: 900px){
+
+    .container{
+        width: 100%;
+    }
+   
+
+   
+}
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="icon" href="Assets/logo-removebg-preview.webp">
+    <link rel="stylesheet" href="CSS/template.css">
+    <link rel="stylesheet" href="CSS/forum.css">
+    <script src="https://kit.fontawesome.com/c7de107e5c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="JS/load-components.js" defer></script> 
+    <script type="module" src="JS/forum.js" defer></script> 
+</head>
+
+<body data-page="forum">
+    
+    <header id="header" role="banner"></header>
+    <aside id="aside" class="sidebar" role="complementary" aria-labelledby="aside-title"></aside>
+
+
+    <main>
+
+        <section class="forum-container">
+
+            <section id="searchingBar">
+
+                <div class="buttons-container">
+
+                    <button id="newPost" aria-label="Create new post">
+                        
+                        <i class="fa-solid fa-plus"></i>
+                        <span>New post</span>
+
+                    </button>
+
+                    <button class="news-toggle news-Btn1" aria-label="Toggle news section">
+
+                        <i class="fa-solid fa-plus"></i>
+                        <span>News</span>
+
+                    </button>
+
+                </div>
+
+                <div class="search-container">
+
+                    <input type="search" id="searchBar" placeholder="Search..." title="Search posts" aria-label="Search posts" autocomplete="off">
+
+                    <label for="searchBar" id="myLabel">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+
+                </div>
+
+                <button class="news-toggle news-Btn2" aria-label="Toggle news section">
+
+                    <i class="fa-solid fa-plus"></i>
+                    <span>News</span>
+
+                </button>
+            
+            </section>
+
+            <section class="posts-container">
+
+                <ul class="cards-listContainer">
+    
+                   
+                </ul>
+              
+    
+                <div>
+    
+                    <button class="show-more" aria-label="Show more posts">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        <span>
+                            Show more 
+                        </span>
+
+                    </button>
+    
+                </div>
+    
+            </section>
+
+        </section>
+
+        
+
+        
+
+        <aside class="second-aside" aria-labelledby="latest-news">
+
+            <h1>Latest news</h1>
+
+            <button class="news-closingBtn" aria-label="Close news section">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <article class="articleCard">
+
+                <img src="Assets/image1.webp" class="articleImage" alt="Exploring the future of artificial intelligence">
+
+                <h2>Exploring the Future of Artificial Intelligence</h2>  
+
+                <span>
+                    Artificial Intelligence (AI) continues to evolve at a rapid pace,
+                    impacting industries from healthcare to entertainment. What does the future hold,
+                    and how can we prepare for the changes it will bring?
+                </span>
+                      
+            </article>
+    
+            <article class="articleCard">    
+
+                <img src="Assets/image2.webp" class="articleImage" alt="The impact of climate change on global agriculture">
+
+                <h2>The Impact of Climate Change on Global Agriculture</h2> 
+
+                <span>
+                    Climate change is affecting ecosystems and food production worldwide, and agriculture
+                    is one of the hardest-hit sectors. Rising temperatures, altered rainfall patterns,
+                    and extreme weather events threaten crop yields and food security
+                </span>
+
+            </article>
+    
+            <article class="articleCard">     
+
+                <img src="Assets/image3.webp" class="articleImage" alt="The rise of remote work post-pandemic">
+
+                <h2>The Rise of Remote Work: A Post-Pandemic World</h2> 
+
+                <span>
+                    The COVID-19 pandemic has drastically changed the way we work. With many businesses shifting
+                    to remote work, employees and employers have had to adapt to new ways of collaborating and
+                    managing teams. What does the future of remote work look like?
+                </span>
+
+            </article>
+    
+    
+        </aside>
+
+    </main>
+
+    
+    
+    <div id="language-container"></div>
+    <div id="country-container"></div>
+
+    <footer id="footer"></footer>
+    
+</body>
+</html>

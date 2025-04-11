@@ -1,0 +1,63 @@
+body{
+    display: flex;
+    background-color: hsl(0, 1%, 1%);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.progress-barContainer{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(44, 40, 47);
+    width: 500px;
+    gap: 10px;
+}
+
+.progress-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.progress-bar{   
+    width:100%;
+    height: 20px;
+    border-radius: 20px;
+    background-color: rgb(169, 145, 150);
+    overflow: hidden;
+}
+
+.progress-accomplished{
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(to right, hsl(48, 100%, 50%), hsl(240, 100%, 50%));
+    transition: width 0.5s ease-in-out;
+    
+}
+
+.goal-tracker h1{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--header-color);
+}
+
+.grid-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--bg-color);
+}
+
+.grid-card:nth-child(2n){
+    background-color: rgb(44, 40, 47);
+}

@@ -1,0 +1,93 @@
+/* #region   ------------------------------------------             ABOUT PAGE         ---------------------------------------------------             */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.about-section,
+.about-row{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--general-bg-color);
+    width: 80%;
+    flex-grow: 1;
+}
+
+.about-section p,
+.about-row p{
+    padding: 20px;
+}
+
+.about, .location{
+    display: flex;
+    justify-content: center;
+    background-color: var(--titles-color);
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+    
+}
+
+.facilities-description{
+    display: flex;
+    width: 100%;
+}
+
+.text-block{
+    width: 50%;
+}
+
+.embeded-map{
+    width: 50%;
+}
+
+iframe{
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+/* #endregion */
+
+/* #region   ------------------------------------------             MEDIA QUERIES         ---------------------------------------------------             */
+
+@media (max-width: 950px){
+
+    
+    .facilities-description{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .about-section{
+        width: 100%;
+    }
+
+    .text-block{
+        width: 100%;
+    }
+
+    .about-row{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    iframe{
+        max-height: 300px; 
+    }
+
+    .embeded-map{
+        width: 100%;
+    }
+    
+}
+
+
+/* #endregion */
+
+

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="icon" href="Assets/logo-removebg-preview.webp">
+    <link rel="stylesheet" href="CSS/template.css">
+    <link rel="stylesheet" href="CSS/account.css">
+    <script src="https://kit.fontawesome.com/c7de107e5c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="JS/load-components.js" defer></script>
+    <script src="JS/account.js" defer></script> 
+</head>
+
+<body data-page="account">
+
+    <header id="header" role="banner"></header>
+    <aside id="aside" class="sidebar" role="complementary" aria-labelledby="aside-title"></aside>
+
+    <main>
+
+        <section class="container" role="region">
+
+            <h1 class="menuTitle">Basic Information</h1>
+
+            <div class="image-card">
+
+                <div class="image-container">
+                    <span>Change your picture</span>
+
+                    <label for="upload-img">
+                        <img src="Assets/defaultUserImage.webp" alt="User profile picture" id="change-picture">
+                    </label>
+
+                    <input type="file" id="upload-img">
+
+                </div>
+
+                <button class="modifyBtn" aria-label="Modify Picture">Modify</button>
+
+            </div> 
+
+            <div class="card info-box">
+
+                <div class="divisor">
+
+                    <h2>Name</h2>
+                    <span class="username"></span>
+
+                </div>
+
+                <button class="modifyBtn operative" aria-label="Modify Name" data-field="username" data-label="Enter your name" data-type="text">Modify</button>
+
+            </div> 
+
+            <div class="card info-box">
+
+                <div class="divisor">
+
+                    <h2>Birth date</h2>
+                    <span class="birthday"></span>
+
+                </div>
+
+                <button class="modifyBtn operative" aria-label="Modify Birthday" data-field="birthday" data-label="Enter your birthdate" data-type="date">Modify</button>
+
+            </div> 
+
+            <div class="card info-box">
+
+                <div class="divisor">
+
+                    <h2>Email</h2>
+                    <span class="email"></span>
+
+                </div>
+
+                <button class="modifyBtn operative" aria-label="Modify Email" data-field="email" data-label="Enter your email" data-type="email">Modify</button>
+
+            </div> 
+
+            <div class="card info-box">
+
+                <div class="divisor">
+
+                    <h2>Phone Number</h2>
+                    <span class="telephone"></span>
+
+                </div>
+
+                <button class="modifyBtn operative" aria-label="Modify Phone Number" data-field="telephone" data-label="Enter your phone number" data-type="tel">Modify</button>
+
+            </div> 
+
+            <div class="card">
+
+                <div class="divisor">
+
+                    <h2>Password</h2>
+                    <span>************</span>
+
+                </div>
+
+                <button class="modifyBtn" aria-label="Modify Password">Modify</button>
+
+            </div> 
+
+        </section>
+
+        <section class="container" role="region">
+
+            <h1 class="menuTitle">Privacy & Data</h1>
+
+            <div class="card">
+
+                <div class="divisor">
+                    <h2>Profile Visibility</h2>
+                </div>
+
+                <button class="modifyBtn" aria-label="Modify Profile Visibility">Modify</button>
+
+            </div> 
+    
+            <div class="card">
+
+                <div class="divisor">
+                    <h2>Delete My Account</h2>
+                </div>
+
+                <button class="modifyBtn" aria-label="Delete my account">Delete</button>
+
+            </div>
+
+            <div class="card">
+
+                <div class="divisor">
+                    <h2>Download My Data</h2>
+                </div>
+
+                <button class="modifyBtn" aria-label="Download my data">Download</button>
+
+            </div> 
+
+        </section>
+
+        <section class="container" role="region">
+
+            <h1 class="menuTitle">Payment & Billing</h1>
+
+            <div class="card">
+
+                <div class="divisor">
+                    <h2>Saved Payment Methods</h2>
+                </div>
+
+                <button class="modifyBtn" aria-label="Modify Saved Methods">Modify</button>
+
+            </div> 
+
+            <div class="card">
+
+                <div class="divisor">
+                    <h2>Billing Address</h2>
+                </div>
+
+                <button class="modifyBtn" aria-label="Modify Billing Address">Modify</button>
+
+            </div> 
+
+            <div class="card">
+
+                <div class="divisor">
+                    <h2>Subscription Status</h2>
+                    <span>Premium</span>
+                </div>
+
+            </div> 
+
+        </section>
+
+
+    </main>
+
+    <div id="language-container"></div>
+    <div id="country-container"></div>
+
+    <form class="edit-cardData" aria-labelledby="editFormTitle">
+
+        <button type="button" class="button-type" aria-label="Close form"><i class="fa-solid fa-xmark"></i></button>
+        
+        <div class="input-container" aria-live="polite">
+
+        </div>
+
+        <button type="submit" class="submit-type" aria-label="Submit form">Submit</button>
+        
+    </form>
+
+
+    <footer id="footer"></footer>
+
+</body>
+
+</html>
+

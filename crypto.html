@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto</title>
+    <link rel="icon" href="Assets/logo-removebg-preview.webp">
+    <link rel="stylesheet" href="CSS/template.css">
+    <link rel="stylesheet" href="CSS/crypto.css">
+    <script src="https://kit.fontawesome.com/c7de107e5c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="JS/load-components.js" defer></script>
+    <script type="module" src="JS/crypto.js" defer></script>
+
+</head>
+
+<body data-page="investing">
+
+    <header id="header" role="banner"></header>
+    <aside id="aside" class="sidebar" role="complementary" aria-labelledby="aside-title"></aside>
+
+    <main> 
+
+        <section class="crypto-container">
+
+            <div class="crypto-searchBar" id="coin-name">
+
+                <div class="crypto-menu">
+
+                    <div class="search-wrapper">
+
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <label for="crypto-searcher"></label>
+                        <input type="text" id="crypto-searcher" title="Search for a cryptocurrency" autocomplete="off">
+
+                    </div>
+
+                    <div class="cryptos-list">
+                      
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <h1 class="chosen-crypto">
+                    
+            </h1>
+
+            <div class="crypto-graphContainer">
+
+                <canvas class="crypto-graph"></canvas>
+
+            </div>
+            
+            <div class="purchase-buttonContainer">
+
+                <button class="purchase-button" aria-label="Buy or sell cryptocurrency">
+                    <i class="fa-solid fa-plus"></i>
+                    Buy / Sell
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="infoCards-container">
+
+            <ul class="info-cards">
+
+            </ul>
+
+        </section>
+
+    </main>
+
+    <div id="language-container"></div>
+    <div id="country-container"></div>
+
+    <footer id="footer"></footer>
+    
+</body>
+</html>

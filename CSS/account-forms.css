@@ -1,0 +1,346 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-inForm,
+.sign-inForm,
+.recoveryForm
+{
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    background-color: var(--form-bg-color);
+    border-radius: 20px;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+/* #region   ------------------------------------------             LOG-IN FORM          ---------------------------------------------------             */
+
+.log-inForm{
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    padding: 20px;
+    min-height: 480px;
+
+}
+
+.log-inBlock{
+    display: flex;
+    flex: 9;
+}
+
+.log-inSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 50%;
+}
+
+.log-inSection input{
+    color: var(--inverted-text-color);
+}
+
+#remember-meContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#remember-meContainer label{
+    font-size: 1rem;
+}
+
+#remember-me{
+    cursor: pointer;
+}
+
+#remember-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#forgotten-button,
+#create-button,
+#submit-button{
+    background: none;
+    border: none;
+    font-size: 1rem;
+}
+
+#create-button{
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+#forgotten-button{
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: end;
+}
+
+#forgotten-button:hover,
+#create-button:hover{
+    background-color: var(--form-hover-color);
+    transition: .15s;
+}
+
+#create-button{
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.log-inButtons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+/* #endregion */
+
+/* #region   ------------------------------------------             SIGN-IN FORM          ---------------------------------------------------             */
+
+.sign-inForm{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-height: 480px;
+
+}
+
+
+.sign-inBlock{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.sign-inSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.sign-inSection input{
+    color: black;
+}
+
+#sign-inRow{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#checkbox-row{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+#tos-agreement{
+    cursor: pointer;
+}
+
+#tos-label{
+    font-size: 1rem;
+}
+
+#tos-label a{
+    font-size: 1rem;
+}
+
+
+/* #endregion */
+
+/* #region   ------------------------------------------            RECOVERY FORM          ---------------------------------------------------             */
+
+.recoveryForm{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-height: 480px;
+}
+
+.recovery-block{
+    display: flex;
+    justify-content: center;
+    flex: 9;
+    gap: 10px;
+}
+
+.recovery-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+}
+
+.recovery-section p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.recovery-section input{
+    color: var(--inverted-text-color);
+}
+
+
+.return-button:hover{
+    background-color: var(--form-hover-color);
+    transition: .15s;
+}
+
+
+/* #endregion */
+
+/* #region   ------------------------------------------             LOGO         ---------------------------------------------------             */
+
+.form-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.form-logo span{
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.logo{
+    align-self: flex-start;
+    width: 50%;
+}
+
+
+
+/* #endregion */
+
+/* #region   ------------------------------------------             SUBMIT BLOCK         ---------------------------------------------------             */
+
+.return-button{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background: none;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.submit-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.submit-button{
+    background-color: hsl(229, 100%, 50%);
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.submit-button:hover{
+    background-color: hsl(229, 100%, 60%);
+    transition: .15s;
+    
+}
+
+/* #endregion */
+
+.visibility{
+    visibility: visible;
+}
+
+/* #region   ------------------------------------------             MEDIA QUERIES         ---------------------------------------------------             */
+
+@media (max-width: 900px){
+
+    .log-inForm{
+        width: 90%;
+    }
+
+    .sign-inForm{
+        width: 90%;
+    }
+
+    .recoveryForm{
+        width: 90%;
+    }
+  
+}
+
+@media (max-width: 600px){
+
+    .log-inForm{
+        width: 100%;
+        
+    }
+
+    .sign-inForm{
+        width: 100%;
+    }
+
+    .recoveryForm{
+        width: 100%;
+    }
+
+    .log-inBlock{
+        flex-direction: column;
+    }
+
+    .sign-inBlock{
+        flex-direction: column;
+    }
+
+    .recovery-block{
+        flex-direction: column;
+    }
+
+    .form-logo{
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+    
+    .log-inSection{
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    .logo{
+        width: 30%;
+        align-self: center;
+    }
+
+}
+
+
+
+/* #endregion */
+

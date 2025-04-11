@@ -1,0 +1,142 @@
+[
+    {
+        "date": "12/01",
+        "reason": "IKEA",
+        "amount": 155,
+        "expense": true,
+        "currency": "€"
+    },
+    {
+        "date": "15/01",
+        "reason": "Netflix",
+        "amount": 12,
+        "expense": true,
+        "currency": "€"
+    },
+    {
+        "date": "19/01",
+        "reason": "Uber",
+        "amount": 25,
+        "expense": true,
+        "currency": "€"
+    },
+    {
+        "date": "22/01",
+        "reason": "Spotify",
+        "amount": 29,
+        "expense": true,
+        "currency": "€"
+    },
+    {
+        "date": "25/01",
+        "reason": "Ebay",
+        "amount": 234,
+        "expense": true,
+        "currency": "€"
+    },
+    {
+        "date": "01/02",
+        "reason": "Decathlon",
+        "amount": 167,
+        "expense": true,
+        "currency": "€"
+    },
+    {
+        "date": "04/02",
+        "reason": "McDonald's",
+        "amount": 115,
+        "expense": true,
+        "currency": "€"
+    },
+    {
+        "date": "07/02",
+        "reason": "Lidl",
+        "amount": 30,
+        "expense": true,
+        "currency": "€"
+    },
+    {
+        "date": "09/02",
+        "reason": "H&M",
+        "amount": 90,
+        "expense": true,
+        "currency": "€"
+    },
+    {
+        "date": "13/02",
+        "reason": "Starbucks",
+        "amount": 6,
+        "expense": true,
+        "currency": "€"
+    },
+    {
+        "date": "17/02",
+        "reason": "Walmart",
+        "amount": 120,
+        "expense": true,
+        "currency": "€"
+    },
+    {
+        "date": "20/02",
+        "reason": "Nike",
+        "amount": 150,
+        "expense": true,
+        "currency": "€"
+    },
+    {
+        "date": "23/02",
+        "reason": "Apple Store",
+        "amount": 99,
+        "expense": true,
+        "currency": "€"
+    },
+    {
+        "date": "26/02",
+        "reason": "Carrefour",
+        "amount": 80,
+        "expense": true,
+        "currency": "€"
+    },
+    {
+        "date": "02/03",
+        "reason": "Primark",
+        "amount": 45,
+        "expense": true,
+        "currency": "€"
+    },
+    {
+        "date": "05/03",
+        "reason": "Zalando",
+        "amount": 260,
+        "expense": true,
+        "currency": "€"
+    },
+    {
+        "date": "08/03",
+        "reason": "Amazon",
+        "amount": 213,
+        "expense": true,
+        "currency": "€"
+    },
+    {
+        "date": "10/03",
+        "reason": "Cinemas",
+        "amount": 20,
+        "expense": true,
+        "currency": "€"
+    },
+    {
+        "date": "12/03",
+        "reason": "KFC",
+        "amount": 18,
+        "expense": true,
+        "currency": "€"
+    },
+    {
+        "date": "14/03",
+        "reason": "Sephora",
+        "amount": 40,
+        "expense": true,
+        "currency": "€"
+    }
+]
